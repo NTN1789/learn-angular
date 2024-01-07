@@ -1,0 +1,30 @@
+ng g c algumaCoisa - vai gerar componente
+
+quando criar um componente tem que exportar dele dentro do imports de algum componente
+
+
+
+vc usar no app,component.ts
+ngOnInit()
+
+este evento é iniciado após o angular
+exibir pela primeira vez as propriedades
+vinculadas aos dados ou quando o componente e iniciado
+
+    ngOnInit() :void{
+        setTimeout(( ) =>{
+           console.log(1);
+
+        }, 5000)
+    }     // a aplicação vai demorar 5 segundos para iniciar
+
+
+ngOnChanges()
+
+Este evento é executado sempre que
+um  valor de um controle de entrada
+dentro do componente e alterado
+
+sempre que um componente recebe
+um dado atavés do  @input() o @ngOnChanges()
+é invocado
