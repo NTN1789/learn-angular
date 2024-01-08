@@ -5,6 +5,7 @@ quando criar um componente tem que exportar dele dentro do imports de algum comp
 
 
 vc usar no app,component.ts
+
 ngOnInit()
 
 este evento é iniciado após o angular
@@ -28,3 +29,12 @@ dentro do componente e alterado
 sempre que um componente recebe
 um dado atavés do  @input() o @ngOnChanges()
 é invocado
+
+
+
+ngAfterContentInit()
+
+
+este método de ciclo  de vida é executado
+quando o Angular realiza qualquer projeção
+de conteúdo nas visualizações do componente

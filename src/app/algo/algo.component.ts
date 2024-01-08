@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit} from '@angular/core';
+import { Component, Input, OnChanges, OnDestroy, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-algo',
@@ -7,7 +7,7 @@ import { Component, Input, OnChanges, OnInit} from '@angular/core';
   templateUrl: './algo.component.html',
   styleUrl: './algo.component.scss'
 })
-export class AlgoComponent  implements OnInit, OnChanges	 {
+export class AlgoComponent  implements OnInit, OnChanges, OnDestroy	 {
  @Input() public title:string = "Bem vindo Zé";
 
 
@@ -22,6 +22,10 @@ export class AlgoComponent  implements OnInit, OnChanges	 {
   ngOnInit(): void {
     // ciclo de vida do angular
 
+  }
+
+  ngOnDestroy(): void {
+    console.log("deu bom foi destruito");
   }
 
 }
