@@ -38,3 +38,53 @@ ngAfterContentInit()
 este método de ciclo  de vida é executado
 quando o Angular realiza qualquer projeção
 de conteúdo nas visualizações do componente
+
+
+
+Data Binding é par atrabalhar com daods
+
+é uma forma de exbir dados em seu
+component HTML, nada mais do que
+trabalhar com dados
+
+
+- interpolation
+- Property Binding
+-Event Binding
+-Two-way Binding
+
+
+HTML
+intepolation =>   {{title}}
+
+CLASS TS
+public title:string = "Bem vindo";
+
+
+Property Binding
+
+ajuda a definir valores para propriedades
+de elementos ou diretivas HTML
+
+
+
+HTML
+
+<button [disabled]="disabledButton"> button</button>
+
+<img [src]="itemImageUrl" >
+
+<img src="{{itemImageUrl}}">
+
+
+
+Two-Way Binding
+
+
+<input [(ngModel)] = "nome" >
+<span> {{nome}}</span>
+
+
+CLASS TS
+
+public nome =  "Natan";

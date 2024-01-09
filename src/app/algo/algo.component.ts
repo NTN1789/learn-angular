@@ -14,7 +14,7 @@ export class AlgoComponent  implements OnInit, OnChanges, OnDestroy	 {
   constructor() { }
   ngOnChanges(): void {
     // input serve para receber dados de outro component
-    console.log("alterado com sucesso ")
+
     console.log(this.title) // ola mundo vai retornar
   }
 
