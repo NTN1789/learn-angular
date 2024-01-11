@@ -3,11 +3,16 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { AlgoComponent } from './algo/algo.component';
 import { DataBidingComponent } from './data-biding/data-biding.component';
+import { DiretivasEstruturaisComponent } from './diretivas-estruturais/diretivas-estruturais.component';
+
+
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, AlgoComponent,DataBidingComponent],
+  imports: [CommonModule, RouterOutlet, AlgoComponent,DataBidingComponent, DiretivasEstruturaisComponent],
   template: `
   {{valor}}
   <button (click)="adicionar()">Incrementar</button>
@@ -16,7 +21,9 @@ import { DataBidingComponent } from './data-biding/data-biding.component';
   <br>
   <button (click)="destruirComponente()"> Destruir evento </button>
   <app-data-biding></app-data-biding>
-  <router-outlet></router-outlet>`,
+  <app-diretivas-estruturais></app-diretivas-estruturais>
+
+ <router-outlet></router-outlet>`,
 
 })
 export class AppComponent  implements OnInit {

@@ -88,3 +88,19 @@ Two-Way Binding
 CLASS TS
 
 public nome =  "Natan";
+
+
+
+ngModel e bem usado em formulario
+
+
+
+diretivas estruturais
+
+
+NgIf - condicional
+
+NGFor - repete um nó para cada item de uma lista
+
+
+NGSwitch - um conjunto de switch case
